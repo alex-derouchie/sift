@@ -10,4 +10,6 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 })
 export class JumboComponent {
 
+  protected value = 43;
+
 }
