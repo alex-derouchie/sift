@@ -7,7 +7,11 @@ import { SiftContentComponent } from "../components/sift-content/sift-content.co
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, JumboComponent, SiftContentComponent],
+  imports: [RouterOutlet, 
+    HeaderComponent, 
+    JumboComponent, 
+    SiftContentComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

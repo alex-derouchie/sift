@@ -1,0 +1,21 @@
+.sift-content {
+    display: grid;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.content-select {
+    display: flex;
+    justify-content: center;
+
+    &__option {
+        color: grey;
+        margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+}
+
+.create-task {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}

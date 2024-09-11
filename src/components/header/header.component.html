@@ -1,13 +1,19 @@
 <mat-toolbar>
-    <span>
-        <button mat-icon-button color="accent" aria-label="side menu button">
-            <mat-icon>menu</mat-icon>
-        </button>
-    </span>
+    <a mat-icon-button 
+        color="accent" 
+        class="menu-button" 
+        aria-label="side menu button"
+        (click)="logClick()"
+        >
+        <mat-icon>menu</mat-icon>
+    </a>
     <span> Sift Icon </span>
-    <span>
-        <button mat-icon-button color="accent" aria-label="social button">
-            <mat-icon>person</mat-icon>
-        </button>
-    </span>
+    <a mat-icon-button 
+        color="accent" 
+        class="social-button" 
+        aria-label="social button"
+        (click)="logClick()"
+        >
+        <mat-icon>person</mat-icon>
+    </a>
 </mat-toolbar>

@@ -1,16 +1,22 @@
-<div class="display-select">
-    <span>
-        <button mat-icon-button color="accent" aria-label="social button">
-            <mat-icon>list</mat-icon>
-        </button>
-        <button mat-icon-button color="accent" aria-label="social button">
-            <mat-icon>calendar_month</mat-icon>
-        </button>
-    </span>
-</div>
+<div class="sift-content">
+    <div class="display-select">
+        <span class="content-select">
+            <a mat-icon-button color="accent" class="content-select__option" aria-label="Display tasks as list button">
+                <mat-icon>list</mat-icon>
+            </a>
+            <a mat-icon-button color="accent" class="content-select__option" aria-label="Display tasks as calendar button">
+                <mat-icon>calendar_month</mat-icon>
+            </a>
+        </span>
+    </div>
+    
+    @if(true){
+    <app-task-list/>
+    } @else {
+    <app-calendar/>
+    }
 
-@if(true){
-<app-task-list/>
-} @else {
-<app-calendar/>
-}
+    <button mat-fab color="primary" class="create-task" aria-label="Create task button">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
