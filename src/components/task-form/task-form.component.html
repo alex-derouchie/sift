@@ -1,0 +1,13 @@
+<form class="task-form" [formGroup]="formFields" (ngSubmit)="addTask()">
+    <div class="form-field">
+        <label class="label">Task</label>
+        <input type="text" class="input" formControlName="taskName"/>
+    </div>
+    <div class="form-field">
+        <label class="label">Score</label>
+        <input type="text" class="input" formControlName="score"/>
+    </div>
+    <div class="form-submit">
+        <button type="sumbit">Add Task</button>
+    </div>
+</form>
